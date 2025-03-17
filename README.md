@@ -4,12 +4,15 @@
 @startuml
 
 class Entity {
+    id : integer
     age : integer
+    location : string
 }
 
 class LivingBeing{
     name : string
-    numberOfLegs : integer
+    health : integer
+    energy : integer
 }
 
 class Smurf {
@@ -17,23 +20,34 @@ class Smurf {
 }
 
 class Cat {
-
+    furColor : int
 }
 
 class Human {
-
+    job : string
 }
 
 class NonLivingBeing {
-
+    material : string
+    height : integer
+    width : integer
 }
 
 class Building {
+    area : float
     numberOfDoors : integer
     numberOfWindows : integer
 }
 
 class NaturalStructure {
+
+}
+
+class River {
+
+}
+
+class Tree {
 
 }
 
@@ -46,6 +60,9 @@ LivingBeing --> Human
 
 NonLivingBeing --> Building
 NonLivingBeing --> NaturalStructure
+
+NaturalStructure --> Tree
+NaturalStructure --> River
 
 @enduml
 ```
