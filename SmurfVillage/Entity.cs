@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SmurfVillage
 {
-    class Smurf
+    class Entity
     {
-        uint hatColor;
+        uint age;
     }
 }

@@ -1,18 +1,53 @@
 # SmurfVillage
 
 ```plantuml
-@startuml test
+@startuml
 
-(Entity) --> (LivingBeing)
-(Entity) --> (NonLivingBeing)
+class Entity {
+    age : integer
+}
 
-(LivingBeing) --> (Smurf)
-(LivingBeing) --> (Animal)
-(LivingBeing) --> (Human)
+class LivingBeing{
+    name : string
+    numberOfLegs : integer
+}
 
-(NonLivingBeing) --> (Building)
-(NonLivingBeing) --> (NaturalStructure)
+class Smurf {
+    hatColor : int
+}
 
+class Cat {
+
+}
+
+class Human {
+
+}
+
+class NonLivingBeing {
+
+}
+
+class Building {
+    numberOfDoors : integer
+    numberOfWindows : integer
+}
+
+class NaturalStructure {
+
+}
+
+Entity --> LivingBeing
+Entity --> NonLivingBeing
+
+LivingBeing --> Smurf
+LivingBeing --> Cat
+LivingBeing --> Human
+
+NonLivingBeing --> Building
+NonLivingBeing --> NaturalStructure
 
 @enduml
 ```
+
+![alt text](image.png)

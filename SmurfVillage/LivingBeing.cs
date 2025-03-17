@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace SmurfVillage
 {
-    class Villager : Smurf
+    class LivingBeing : Entity
     {
-        string homeAddress;
-        string specialisation;
+        string name;
+        uint numberOfLegs;
+
     }
 }

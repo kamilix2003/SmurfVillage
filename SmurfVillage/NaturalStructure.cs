@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmurfVillage
 {
-    class Smurf
+    class NaturalStructure
     {
-        uint hatColor;
     }
 }

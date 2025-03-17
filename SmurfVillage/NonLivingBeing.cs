@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmurfVillage
 {
-    class Villain
+    class NonLivingBeing : Entity
     {
 
     }

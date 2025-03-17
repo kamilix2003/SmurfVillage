@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmurfVillage
 {
-    class Creature
+    class Cat
     {
-        string name;
-        uint age;
-        bool gender;
     }
 }
