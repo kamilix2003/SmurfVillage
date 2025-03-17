@@ -4,9 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Smurf s1 = new Smurf(0xFF0000, "Papa smurf", 500, "Village");
-            Cat c1 = new Cat(0xFFFFFF, "plain", "Azreal", 5, "Gargamels Hut");
-            Building b1 = new Building(45.5, 1, "Brick", 6.5, )
+            Smurf s1 = new Smurf(0xff0000, "Papa smurf", 500, "Village");
+            Cat c1 = new Cat(0xeb8f34, "plain", "Azreal", 5, "Gargamels hut");
+            Building b1 = new Building(50, 2, "Brick", 20, "Forest");
+            NaturalStructure n1 = new NaturalStructure(false, "Water", 1000, "Forest");
         }
     }
 }
