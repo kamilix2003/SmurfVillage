@@ -8,6 +8,12 @@ namespace SmurfVillage
 {
     class NonLivingBeing : Entity
     {
+        private string material;
 
+        protected NonLivingBeing(string _material, uint _age, string _location)
+            : base(_age, _location)
+        {
+            this.material = _material;
+        }
     }
 }

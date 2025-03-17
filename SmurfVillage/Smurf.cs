@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace SmurfVillage
 {
-    class Smurf
+    class Smurf : LivingBeing
     {
-        uint hatColor;
+        private uint hatColor; 
+
+        public Smurf(uint _hatColor, string _name, uint _health, uint _energy, uint _age, string _location)
+            : base(_name, _health, _energy, _age, _location)
+        {
+            this.hatColor = _hatColor;
+        }
     }
 }

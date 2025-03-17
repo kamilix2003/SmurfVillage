@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace SmurfVillage
 {
-    class NaturalStructure
+    class NaturalStructure : NonLivingBeing
     {
+        private bool harvestable;
+
+        public NaturalStructure(bool _harvestable, string _material, uint _age, string _location)
+            : base(_material, _age, _location) 
+        {
+            this.harvestable = _harvestable;
+        }
     }
 }

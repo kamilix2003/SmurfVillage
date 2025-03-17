@@ -8,8 +8,16 @@ namespace SmurfVillage
 {
     class LivingBeing : Entity
     {
-        string name;
-        uint numberOfLegs;
+        private string name;
+        protected uint health;
+        protected uint energy;
 
+        protected LivingBeing(string _name, uint _age, string _location)
+            : base(_age, _location)
+        {
+            this.name = _name;
+            this.health = 100;
+            this.energy = 100;
+        }
     }
 }
